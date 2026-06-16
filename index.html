@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leo Tong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <img src="image.png" alt="Leo Tong" class="title-img" />
+      <h1 class="title">Leo Tong</h1>
+
+      <div class="content">
+        <p class="paragraph">
+          Hey everyone, welcome to my website. Or at least, the third iteration
+          of one. And the simplest of them all technology-wise. Just a plain old
+          HTML and CSS file. And a slightly long read if you're bothered. It's
+          okay. With how much the modern adult's attention span has dwindled due
+          to the dopamine-driven design of short-form video and social media,
+          I'm sure one article is manageable 👍.
+        </p>
+        <p class="paragraph">
+          Now, perhaps it would only be proper if I begin with a
+          self-introduction. I was born under the name Tianze (天泽), but I go
+          by just Leo nowadays. I've always wondered why my parents chose my
+          English name to be Leo. When I asked, the response was "You were named
+          after a very famous star.".
+          <a
+            href="https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >Leonardo DiCaprio</a
+          >
+          maybe 🤔?
+        </p>
+        <p class="paragraph">
+          Let's talk about programming and software development. TypeScript and
+          Python are my most used languages. I would consider myself to be a web
+          frontend enthusiast. My favourite frontend framework is
+          <a
+            href="https://vuejs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >Vue.js</a
+          >
+          and my most used component library is
+          <a
+            href="https://ui.nuxt.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >Nuxt UI</a
+          >. Though I think I want to create my own component library someday.
+          Add a little more <strong>variety</strong> to the Vue ecosystem I
+          suppose. Check out whatever scraps of work I have on my
+          <a
+            href="https://github.com/TheRobertLing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >GitHub</a
+          >
+          I guess. Though I use the pseudonym Robert Ling. It was a name a
+          friend gave me.
+        </p>
+
+        <p class="paragraph">
+          Gaming next 🎮. I play
+          <a
+            href="https://www.teamfortress.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >Team Fortress 2</a
+          >
+          primarily. A timeless masterpiece, as many have called it, and indeed
+          I think of it as one myself. From 2017 to now, it has been
+          <span id="years"></span> years since I've first booted up the game.
+          How time flies. It's crazy to think that this game has accompanied me
+          for almost an entire decade. To me, I still think 2007 was one decade
+          ago. My favourite class to play is the Heavy. I like the
+          <a
+            href="https://wiki.teamfortress.com/wiki/Mann_vs._Machine"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >Mann vs. Machine</a
+          >
+          gamemode the most. Yes, it's basically gambling for golden-colored
+          weapons - but hey, still cheaper per week than getting one lunch out
+          in the Sydney CBD (and getting an "Australium" weapon sounds cool
+          fight me).
+          <script>
+            document.getElementById("years").textContent =
+              new Date().getFullYear() - 2017;
+          </script>
+        </p>
+
+        <p class="paragraph">
+          Music 🎵. Let's talk about music. Nowadays, I find myself listening to
+          Chinese songs a lot more than I do English songs. I guess that's one
+          way of rediscovering part of your cultural heritage as a migrant. But
+          another reason is that, if you take a moment to process the lyrics of
+          many Mandopop/Cantopop songs, they are often much more artistic and
+          "poetic" than English pop songs. My favourite band is
+          <a
+            href="https://www.mayday.com.tw"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >Mayday (五月天)</a
+          >
+          and my favourite song is
+          <a
+            target="_blank"
+            href="https://www.youtube.com/watch?v=-_GUO-bYyRU"
+            class="link"
+          >
+            Second Life (第二人生)</a
+          >.
+        </p>
+        <p class="paragraph">
+          How about I share my experiences with life? Who wouldn't want to hear
+          a random person on the internet tell their tale of how they roamed
+          this planet we call Earth? Honestly, I sometimes think about the
+          <span id="days"></span> days I've been alive and think - what the hell
+          am I even doing? A midlife crisis before I'm halfway through my 20s.
+          But I guess, when you see people you thought you'd known for a long
+          time drift away from you, old schoolmates breaking into prestigious
+          companies, moving to Silicon Valley, getting into relationships, while
+          I'm just still... here, anyone would feel left behind. But life moves
+          on. If time can't stop for me, then I sure need to get a move on. No
+          idea if that means anything, but at least it sounded like something
+          😎.
+          <script>
+            const birthDate = new Date("2004-10-15");
+            const today = new Date();
+            const days = Math.floor(
+              (today - birthDate) / (1000 * 60 * 60 * 24),
+            );
+            document.getElementById("days").textContent = days.toLocaleString();
+          </script>
+        </p>
+
+        <p class="paragraph">
+          Hey, congratulations on making it to the end of the read. I'm sure
+          there were more things I would've added, but at least at the time of
+          writing, I couldn't think of anything else interesting to talk about.
+          But everything above pretty much captures me as a person I guess. You
+          can catch me on <a href="#" class="link">LinkedIn</a> or
+          <a href="#" class="link">email</a>. I'm usually free to chat. Hope you
+          have a good day. Peace out.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
